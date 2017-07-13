@@ -2,6 +2,10 @@
 
 custome styleguide plugin
 
+Enforce filter(Boolean) instead filter(x => x)
+
+use () => {} instead _.partial
+
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
