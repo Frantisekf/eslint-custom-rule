@@ -9,26 +9,27 @@ const parserOptions = {
     },
 }
  
-const importErrors = [{
-    type: "ImportDeclaration",
-    message: "Inconsistent import",
+const expressionErros = [{
+    type: "CallExpression",
+    message: "used filter(x => x) instead filter(boolean) ",
 }, ]
  
  
 const suggestionTests = {
  
     valid: [{
-            code: "",
+            code: "var Boolean = true; ",
             parserOptions,
         },      
  
  
     ],
     invalid: [{
-            code: "",
+            code: "filter(x => x)",
             parserOptions,
             errors: [{
                 type: "",
+                
                 message: '',
             }]
         },
