@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-0002",
+  "version": "0.0.0",
+  "description": "custome styleguide plugin",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Frantisek Farkas",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "compile": "babel --presets es2015,stage-2 -d lib/ src/ && uglifyjs lib/index.js -o lib/index.js"
+  },
+  "dependencies": {
+    "eslint": "~3.9.1",
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",    
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^19.0.2",
+    "regenerator-runtime": "^0.10.3",
+    "uglify-js": "^2.8.18"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
