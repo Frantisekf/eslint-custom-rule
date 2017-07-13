@@ -2,9 +2,9 @@
 
 custome styleguide plugin
 
-Enforce filter(Boolean) instead filter(x => x)
+Enforce  `filter(Boolean)` instead `filter(x => x)`
 
-use () => {} instead _.partial
+use `() => {}` instead `_.partial`
 
 ## Installation
 
